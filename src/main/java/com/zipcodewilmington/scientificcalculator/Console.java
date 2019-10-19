@@ -26,7 +26,35 @@ public class Console {
         return null;
     }
 
+//    public static Double getDoubleInput(String prompt) { Stub Code
+//        return null;
+//    }
+
     public static Double getDoubleInput(String prompt) {
+        try {
+            println(prompt);
+            Scanner scanner = new Scanner(System.in);
+            Double userDouble = scanner.nextDouble();
+            return userDouble;
+        }catch (Exception e){
+            Console.println("Invalid input..");
+        }
         return null;
     }
+
+
+    public static Integer getMenuInput(String prompt) {
+        try {
+            Console.println(" [1] Add\n [2] subtract\n [3] multiply \n [4] divide\n");
+            println(prompt);
+            Scanner scanner = new Scanner(System.in);
+            Integer userMenuSelection = scanner.nextInt();
+            return userMenuSelection;
+        } catch (Exception e) {
+            Console.println("Not a valid menu selection..");
+        }
+        return null;
+    }
+
+
 }
