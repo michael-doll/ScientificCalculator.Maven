@@ -1,8 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class Operations {
-
-    public static String subtract(double dOne, double dTwo){
-        return dOne + " - " + dTwo + " = " + (dOne - dTwo);
-    }
+public interface Operations {
+    double calculation(double num1, double num2);
 }

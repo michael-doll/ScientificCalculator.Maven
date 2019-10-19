@@ -13,14 +13,16 @@ public class MainApplication {
 //        Console.println("The user input %s as a integer", i); Stub Code
 //        Console.println("The user input %s as a d", d); Stub Code
 
-        Double dOne = Console.getDoubleInput("Enter your first number : ");
+        Double dOne = Console.getDoubleInput("Enter your first value : ");
         Integer i = Console.getMenuInput("Enter the operation to perform  : ");
-        Double dTwo = Console.getDoubleInput("Enter your second number : ");
-        String toDisplay  = " ";// Figure out how to do this
+        Double dTwo = Console.getDoubleInput("Enter your second value : ");
+//        String toDisplay  = Display.getDisplay(i);// Figure out how to do this
 
-        if(i == 2){ //Wes wanted to use Switch, that will be much cleaner
-           toDisplay = Operations.subtract(dOne, dTwo);
-        }
+
+        Calculator calc = new Calculator();
+        String toDisplay = Double.toString(calc.calculate(dOne,dTwo,i));
+
+
 
         Console.println("The user input %s as an integer for their menu selection", i); //Displays menu selection
 
