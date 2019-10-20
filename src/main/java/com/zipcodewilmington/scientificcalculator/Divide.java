@@ -4,6 +4,10 @@ import com.sun.tools.internal.ws.wsdl.document.Operation;
 
 public class Divide implements Operations {
     public double calculation(double num1, double num2){
-        return num1 / num2;
+            if(num1 == 0){
+                Console.println("Nope..");
+                return 0;
+            }
+            return num1 / num2;
     }
 }

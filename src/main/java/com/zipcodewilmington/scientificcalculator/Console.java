@@ -41,7 +41,7 @@ public class Console {
 
     public static Integer getMenuInput(String prompt) {
         try {
-            Console.println(" [1] Add\n [2] subtract\n [3] multiply \n [4] divide\n [0] clear\n [5] exit");
+            Console.println(" [1] Add\n [2] subtract\n [3] multiply \n [4] divide\n [0] clear\n [5] exit\n");
             println(prompt);
             Scanner scanner = new Scanner(System.in);
             Integer userMenuSelection = scanner.nextInt();
