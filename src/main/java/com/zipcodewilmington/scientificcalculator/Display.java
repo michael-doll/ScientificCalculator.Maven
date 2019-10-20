@@ -6,4 +6,7 @@ public class Display { // Not sure what I'm thinking here..
 
        return calc.toString();
     }
+//    public static int clear(){ // // // // // //
+//        return 0;
+//    }
 }

@@ -1,8 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
-/**
- * Created by leon on 2/9/18.
- */
+
 public class MainApplication {
     public static void main(String[] args) {
         boolean power = true; // Calculator is on
@@ -23,11 +21,9 @@ public class MainApplication {
             }
                 Double dTwo = Console.getDoubleInput("Enter your second value : ");
 
-
-
             dOne = calc.calculate(dOne, dTwo, menuInput); // updates current value
 
-            Console.println(Display.getDisplay(Double.valueOf(dOne)));
+            Console.println(Display.getDisplay(Double.valueOf(dOne))); // not sure if going to build out display further
 
         }
     }

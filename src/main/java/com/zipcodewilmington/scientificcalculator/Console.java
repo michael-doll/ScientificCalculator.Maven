@@ -18,18 +18,6 @@ public class Console {
         print(output + "\n", args);
     }
 
-//    public static String getStringInput(String prompt) {
-//        Scanner scanner = new Scanner(System.in);
-//        println(prompt);
-//        String userInput = scanner.nextLine();
-//        return userInput;
-//    }
-
-    public static Integer getIntegerInput(String prompt) {
-        return null;
-    }
-
-
     public static Double getDoubleInput(String prompt) {
         Double userDouble = 0.0;
 
@@ -60,7 +48,7 @@ public class Console {
                 flag = false;
             }
         }while (!flag); // condition for menu input validation
-        return null;
+        return userMenuSelection;
     }
 
 
