@@ -5,11 +5,11 @@ package com.zipcodewilmington.scientificcalculator;
  */
 public class MainApplication {
     public static void main(String[] args) {
-        boolean power = true;
+        boolean power = true; // Calculator is on
         Console.println("Welcome to my calculator!\n");
 
-        while (calcOn(power)){
-            Double dOne = Console.getDoubleInput("Enter your first value : ");
+        Double dOne = Console.getDoubleInput("Enter your first value : ");
+        while (calcOn(power)){ // Checks power status
             Console.println("Current Value : " + dOne);
             Integer menuInput = Console.getMenuInput("Enter the operation to perform  : ");
             if(menuInput == 5){power = false; break;}
@@ -17,12 +17,13 @@ public class MainApplication {
 //        String toDisplay  = Display.getDisplay(i);// Figure out how to do this
 
             Calculator calc = new Calculator();
-            String toDisplay = Double.toString(calc.calculate(dOne, dTwo, menuInput));
+            dOne = calc.calculate(dOne, dTwo, menuInput); // updates current value
 
 //        Console.println("The user input %s as an integer for their menu selection", i); //Displays menu selection
 //        Console.println("The user input %s as a d", dOne); // Displays first user input for operation
 //        Console.println("The user input %s as a d", dTwo); // Displays second user input for operation
-            Console.println(toDisplay);
+            Console.println(Display.getDisplay(Double.valueOf(dOne)));
+
         }
     }
     public static boolean calcOn(boolean power){
