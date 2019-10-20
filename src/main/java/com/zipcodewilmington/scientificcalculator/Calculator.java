@@ -1,7 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
 
-import com.sun.org.apache.xpath.internal.operations.Operation;
-
 import java.util.Map;
 import java.util.HashMap;
 
@@ -9,6 +7,7 @@ public class Calculator {
     private double num1;
     private double num2;
     private Integer operation;
+    private boolean power;
 
     private Map<Integer, Operations> operationMap = new HashMap<Integer, Operations>(); // This was a nice idea, not mine.. but a good one
 
@@ -28,5 +27,11 @@ public class Calculator {
         return operationVal.calculation(num1, num2);
     }
 
+    public boolean getPower(){
+        return power;
+    }
+    public void setPower(boolean power){
+        this.power = power;
+    }
 
 }
