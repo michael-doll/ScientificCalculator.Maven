@@ -31,8 +31,4 @@ public class MainApplication {
 
         }
     }
-    private static boolean calcOn(boolean power){
-        return (power);
-    }
-
 }
