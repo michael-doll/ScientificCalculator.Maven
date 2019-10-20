@@ -26,9 +26,6 @@ public class Console {
         return null;
     }
 
-//    public static Double getDoubleInput(String prompt) { Stub Code
-//        return null;
-//    }
 
     public static Double getDoubleInput(String prompt) {
         try {
@@ -42,10 +39,9 @@ public class Console {
         return null;
     }
 
-
     public static Integer getMenuInput(String prompt) {
         try {
-            Console.println(" [1] Add\n [2] subtract\n [3] multiply \n [4] divide\n");
+            Console.println(" [1] Add\n [2] subtract\n [3] multiply \n [4] divide\n [0] clear\n [5] exit");
             println(prompt);
             Scanner scanner = new Scanner(System.in);
             Integer userMenuSelection = scanner.nextInt();

@@ -16,6 +16,10 @@ public class Calculator {
 
         operationMap.put(1, new Addition());
         operationMap.put(2, new Subtraction());
+        operationMap.put(3, new Multiply());
+        operationMap.put(4, new Divide());
+        operationMap.put(0, new Clear());
+
 
     }
 
