@@ -13,12 +13,11 @@ public class MainApplication {
             Console.println("Current Value : " + dOne);
             Integer menuInput = Console.getMenuInput("Enter the operation to perform  : ");
 
-            if(menuInput == 5){power = false; break;} // chekcs power status, exits
+            if(menuInput == 5){power = false; break;} // checks power status, exits if menu prompt is selected
             if(menuInput == 0){
                 dOne = Console.getDoubleInput("Enter your first value : "); // on clear, sets to zero and prompts to input new value
                 menuInput = Console.getMenuInput("Enter the operation to perform  : "); // should be able to do this without repeating myself
             }
-
                 Double dTwo = Console.getDoubleInput("Enter your second value : ");
 
             Calculator calc = new Calculator(); //Calculator to perform operation
@@ -32,7 +31,7 @@ public class MainApplication {
 
         }
     }
-    public static boolean calcOn(boolean power){
+    private static boolean calcOn(boolean power){
         return (power);
     }
 
